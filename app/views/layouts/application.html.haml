@@ -1,0 +1,13 @@
+!!!
+%html
+	%head
+		%title Tweetline
+		= stylesheet_link_tag		 "application"
+		= javascript_include_tag "application"
+		= csrf_meta_tags
+	%body
+		-if alert
+			#alert=alert
+		-if notice
+			#notice=notice
+		= yield

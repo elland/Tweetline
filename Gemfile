@@ -7,6 +7,8 @@ gem 'rails', '3.1.0'
 
 gem 'sqlite3'
 gem 'haml'
+gem "zurb-foundation"
+
 gem 'simple_form'
 gem 'unicorn'
 # Gems used only for assets and not required

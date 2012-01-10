@@ -1,0 +1,12 @@
+%h1 Listing tweets
+= render 'form', :tweet => @tweet
+%table
+	%tr
+		%th Content
+		%th
+	- @tweets.each do |tweet|
+		%tr
+			%td= tweet.content
+
+			%td= link_to 'Destroy', tweet, confirm: 'Are you sure?', method: :delete
+%br/
