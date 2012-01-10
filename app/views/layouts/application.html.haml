@@ -6,8 +6,9 @@
 		= javascript_include_tag "application"
 		= csrf_meta_tags
 	%body
-		-if alert
-			#alert=alert
-		-if notice
-			#notice=notice
-		= yield
+		.container
+			-if alert
+				.alert-box.success=alert
+			-if notice
+				.alert-box.error=notice
+			= yield

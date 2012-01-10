@@ -16,9 +16,9 @@ class TweetsController < ApplicationController
     @tweet = Tweet.new(params[:tweet])
 
     if @tweet.save
-      redirect_to :back, notice: "Successfully posted text!"
+      redirect_to :back, alert: "Successfully posted text!"
     else
-      redirect_to :back, alert: "Text too long!"
+      redirect_to :back, notice: "Text too long!"
     end
   end
 
